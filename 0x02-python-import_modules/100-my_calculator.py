@@ -16,7 +16,7 @@ if __name__ == '__main__':
     operations = {'+': add, '-': sub, '*': mul, '/': div}
 
     if operator not in operations:
-        print("Unknown operator. Available operators: +, -, * and / ")
+        print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
 
     result = operations[operator](a, b)
