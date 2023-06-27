@@ -1,15 +1,16 @@
 #!/usr/bin/python3
 """
-This is a module that writes a class that 
-defines a square by: (based on 0-square.py)
+This is a module that writes a class square
 """
 
+
 class Square:
-    """ Function that defines a square """
+    """This is an implementation of a class square"""
+
     def __init__(self, size):
+        """initialize a new square
+
+        Args:
+            size: The size of a new square
+        """
         self.__size = size
-        """
-        Private instance attribute: size
-        Instantiation with size
-        (no type/ value verification)
-        """
