@@ -4,3 +4,4 @@
 class Square:
     """This implements class Square"""
     pass
+
