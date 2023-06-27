@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-
-"""This class defines a Square"""
+"""This is a module for a class definition of a square"""
 
 class Square:
-    """This implements class Square"""
+    """This is an implementation of a class square"""
     pass
-
