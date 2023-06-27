@@ -3,6 +3,8 @@
 This is a module for a class definition of a square
 """
 
+
 class Square:
-    """ This is an implementation of a class Square """
+    """ This class defines a square """
+
     pass
