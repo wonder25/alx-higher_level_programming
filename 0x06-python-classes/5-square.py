@@ -34,7 +34,7 @@ class Square:
     @property
     def size(self):
         """
-        Get the current size of square
+        Gets the current size of square
 
         Returns:
             int: size of square
@@ -70,15 +70,17 @@ class Square:
         Returns:
             the current area of square
         """
+
         return (self.__size ** 2)
 
     def my_print(self):
         """
-        Print the square with the #character
+        Prints the square with the #character
 
         Args:
             int: self.__size ** 2
         """
+
         if self.__size == 0:
             print()
         for i in range(self.__size):
