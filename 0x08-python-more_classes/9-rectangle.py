@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ Create class: Rectangle """
-
+# 9-rectangle.py
 
 class Rectangle:
     """Empty class Rectangle"""
@@ -70,6 +70,7 @@ class Rectangle:
                 if (j < self.height - 1):
                     my_list += "\n"
             return (my_list)
+
     def __repr__(self):
         """ Prints string representation """
         num1 = str(self.width)
@@ -92,3 +93,8 @@ class Rectangle:
             return rect_1
         else:
             return rect_2
+
+    @classmethod
+    def square(cls, size=0):
+        """ Returns a square instance """
+        return (Rectangle(size, size))
