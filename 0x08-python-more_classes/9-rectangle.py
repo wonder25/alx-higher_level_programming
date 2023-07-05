@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """ Create class: Rectangle """
-# 9-rectangle.py
 
 class Rectangle:
     """Empty class Rectangle"""
