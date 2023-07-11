@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-adds arguments to python list
+adds arguments to Python list
 """
 import sys
 import json
@@ -10,7 +10,8 @@ save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 
 def add_item():
     """
-    adds arguments to list and saves file
+    adds arguments to Python list
+    and saves to file
     """
     try:
         item_list = load_from_json_file("add_item.json")
