@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-"""Creates class square, child class of Rectangle"""
+"""Creates class Square, child class of Rectangle"""
 Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
     """
-    Creates class square
+    Creates class Square
 
     Args:
-        def __init__(self, size) - constructor
+        def __init__(self, size) - Constructor
     """
 
     def __init__(self, size):
