@@ -170,6 +170,7 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """Return dictionary representation"""
+
         my_dict = {}
 
         my_dict['id'] = self.id
