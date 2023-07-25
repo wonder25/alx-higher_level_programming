@@ -28,7 +28,6 @@ class Rectangle(Base):
         def set_y(self, value)
         def area(self)
         def display(self)
-        def __str__(self)
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -114,4 +113,5 @@ class Rectangle(Base):
 
     def __str__(self):
         """String represantation"""
-        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y}\
+- {self.width}/{self.height}"
