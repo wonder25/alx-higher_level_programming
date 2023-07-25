@@ -1,12 +1,14 @@
 #!/usr/bin/python3
-"""Creates class Base"""
 
+"""
+Creates class Base
+"""
 import json
 
 
 class Base:
     """
-    creates class Base
+    class Base
 
     args:
         def __init__(self, id=None)
@@ -14,12 +16,14 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """Constructor"""
-
+        """
+        Constructor method
+        """
+        # self.id = id
         if (id is not None):
             self.id = id
         else:
-            # use type as __nb_objects is a private attribute
+            # use type(self) since __nb_objects is private attr
             type(self).__nb_objects += 1
             self.id = type(self).__nb_objects
 
@@ -49,6 +53,8 @@ class Base:
 
         # Put each dictionary into a list
 
+        # Convert the list to json using the static method to_json_string()
+
         json_dict_list = cls.to_json_string(dict_list)
 
         # Save the json string repr of the list of dictionaries into file
@@ -56,6 +62,16 @@ class Base:
         file_name = cls.__name__ + ".json"
         with open(file_name, 'w', encoding="utf-8") as json_file:
             json_file.write(json_dict_list)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """
+        convert json string to list
+        """
+        if json_string is None:
+            return []
+        else:
+            return json.loads(json_string)
 
     @classmethod
     def create(cls, **dictionary):
