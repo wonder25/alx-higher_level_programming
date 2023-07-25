@@ -116,3 +116,54 @@ class Rectangle(Base):
         """String representation"""
         return f"[Rectangle] ({self.id}) {self.x}/{self.y}\
  - {self.width}/{self.height}"
+
+    def update(self, *args):
+        """Update instance attributes"""
+        if (len(args) > 0):
+            try:
+
+                self.id = args[0]
+            except IndexError:
+                pass
+
+            try:
+
+                self.width = args[1]
+            except IndexError:
+                pass
+
+            try:
+
+                self.height = args[2]
+            except IndexError:
+                pass
+
+            try:
+
+                self.x = args[3]
+            except IndexError:
+                pass
+
+            try:
+
+                self.y = args[4]
+            except IndexError:
+                pass
+
+        else:
+            args_list = ["id", "width", "height", "x", "y"]
+
+            for attrs in args_list:
+                if attrs in kwargs:
+                    if attrs == "width":
+                        self.width = kwargs[attrs]
+                    if attrs == "height":
+                        self.height = kwargs[attrs]
+                    if attrs == "x":
+                        self.x = kwargs[attrs]
+                    if attrs == "y":
+                        self.y = kwargs[attrs]
+                    if attrs == "id":
+                        self.id = kwargs[attrs]
+                else:
+                    pass
