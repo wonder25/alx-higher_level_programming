@@ -26,6 +26,7 @@ class Rectangle(Base):
         def y(self)
         @y.setter
         def set_y(self, value)
+        def area(self)
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -96,3 +97,7 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         else:
             self.__y = value
+
+    def area(self):
+        """Calculates area of the rectangle"""
+        return (self.__height * self.__width)
