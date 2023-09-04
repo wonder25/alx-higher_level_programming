@@ -9,7 +9,7 @@ class Rectangle:
 
         Args:
             __width(int): width of rectangle
-            __HEIGHT(int): height of rectangle
+            __height(int): height of rectangle
         """
         self.height = height
         self.width = width
