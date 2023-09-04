@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" Create class: Rectangle """
+""" Creates class: rectangle """
 
 
 class Rectangle:
-    """ Empty class Rectangle """
+    """ Empty class rectangle """
     def __init__(self, width=0, height=0):
         """ Initialize a rectangle
 
@@ -41,13 +41,28 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         else:
             self.__width = value
+
     def area(self):
-        """ Returns area of rectangle """
+        """ Calculates area of rectangle """
         return (self.height * self.width)
 
     def perimeter(self):
-        """ Returns perimeter of rectangle """
+        """ Calcualtes perimeter of rectangle """
         if (self.height == 0 or self.width == 0):
             return (0)
         else:
             return ((self.height + self.width) * 2)
+
+    def __str__(self):
+        """Prints rectangle using # shape """
+        my_list = ""
+        if (self.width == 0 or self.height == 0):
+            return ("")
+        else:
+            for j in range(self.height):
+                for i in range(self.width):
+                    my_list += "#"
+                if (j < self.height - 1):
+                    my_list += "\n"
+            return (my_list)
+
