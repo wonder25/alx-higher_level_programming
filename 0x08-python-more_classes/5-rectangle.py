@@ -75,4 +75,3 @@ class Rectangle:
     def __del__(self):
         """ Prints string before deleting instace """
         print("Bye rectangle...")
-
