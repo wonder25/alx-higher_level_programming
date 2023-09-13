@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-Jsonify string
+Converts to JSON string
 """
 
 import json
