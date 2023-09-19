@@ -82,8 +82,9 @@ class Rectangle(Base):
             print(" " * self.x + "#" * self.width)
 
     def __str__(self):
-        """ overrides the __str__ method """
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
+        """ string representation"""
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y}\
+- {self.width}/{self.height}"
 
     def update(self, *args, **kwargs):
         """ assigns argument to each attribute """
