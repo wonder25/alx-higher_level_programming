@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """takes url, sends a request to the url and displays the value of request-id"""
-
 from sys import argv
 import urllib.request
 
