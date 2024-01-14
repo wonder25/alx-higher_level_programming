@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""script that takes in a url, sends a request to the url and displays thebody of the response"""
+"""module Docs"""
 
 from sys import argv
 from urllib.error import HTTPError
